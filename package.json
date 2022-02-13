@@ -2,8 +2,9 @@
   "name": "cloudflare-workers",
   "version": "1.0.0",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "publish": "wrangler publish src/index.ts --name my-worker"
+    "dev": "wrangler dev src/build.ts",
+    "publish": "wrangler publish src/build.ts --name",
+    "secret": "wrangler secret put API_KEY --name"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.3.1",
